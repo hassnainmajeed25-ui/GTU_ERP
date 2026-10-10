@@ -1,0 +1,1888 @@
+/* ===========================================================
+   GLOBAL TECH UNIVERSITY (GTU)
+   Professional University Theme
+   Version : 1.0
+=========================================================== */
+
+:root{
+
+--primary:#0B1F52;
+--secondary:#FDB913;
+--dark:#0f172a;
+--light:#ffffff;
+--gray:#f5f7fb;
+--text:#555555;
+--border:#e5e7eb;
+--shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#ffffff;
+color:#222;
+line-height:1.7;
+
+}
+
+a{
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+.container{
+
+max-width:1320px;
+
+}
+
+.section-padding{
+
+padding:90px 0;
+
+}
+/*==============================
+TOP BAR
+==============================*/
+
+.top-bar{
+
+background:var(--primary);
+
+color:#fff;
+
+padding:10px 0;
+
+font-size:14px;
+
+}
+
+.top-left span{
+
+margin-right:20px;
+
+}
+
+.top-left i{
+
+color:var(--secondary);
+
+margin-right:8px;
+
+}
+
+.top-right a{
+
+width:34px;
+
+height:34px;
+
+background:rgba(255,255,255,.15);
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+margin-left:8px;
+
+color:#fff;
+
+transition:.3s;
+
+}
+
+.top-right a:hover{
+
+background:var(--secondary);
+
+color:#000;
+
+transform:translateY(-3px);
+
+}
+/*==============================
+NAVBAR
+==============================*/
+
+.navbar{
+
+padding:18px 0;
+
+background:#fff !important;
+
+box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+height:65px;
+
+}
+
+.logo-title{
+
+font-size:24px;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:2px;
+
+}
+
+.logo-subtitle{
+
+font-size:13px;
+
+color:#888;
+
+margin:0;
+
+}
+
+.nav-link{
+
+font-weight:600;
+
+color:#222 !important;
+
+padding:12px 16px !important;
+
+}
+
+.nav-link:hover{
+
+color:var(--secondary) !important;
+
+}
+
+.btn-warning{
+
+background:var(--secondary);
+
+border:none;
+
+padding:12px 24px;
+
+border-radius:40px;
+
+}
+
+.btn-warning:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-outline-primary{
+
+border-radius:40px;
+
+padding:12px 24px;
+
+}
+/*==================================================
+ HERO SECTION
+==================================================*/
+
+.hero-section{
+
+background:linear-gradient(rgba(8,20,55,.82),rgba(8,20,55,.82)),
+url('../images/hero-building.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+padding:140px 0;
+
+min-height:700px;
+
+display:flex;
+
+align-items:center;
+
+color:#fff;
+
+}
+
+.hero-tag{
+
+display:inline-block;
+
+background:#FDB913;
+
+color:#000;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+letter-spacing:1px;
+
+}
+
+.hero-title{
+
+font-size:58px;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.hero-title span{
+
+color:#FDB913;
+
+}
+
+.hero-text{
+
+font-size:18px;
+
+line-height:32px;
+
+margin-bottom:35px;
+
+color:#e8e8e8;
+
+}
+
+.hero-buttons .btn{
+
+padding:15px 34px;
+
+border-radius:50px;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.hero-image{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+animation:floatImage 5s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/*==================================================
+ STATISTICS
+==================================================*/
+
+.statistics{
+
+background:#ffffff;
+
+padding:70px 0;
+
+margin-top:-70px;
+
+position:relative;
+
+z-index:5;
+
+}
+
+.stat-card{
+
+background:#fff;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.stat-card h2{
+
+font-size:45px;
+
+font-weight:800;
+
+color:#0B1F52;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+font-size:18px;
+
+font-weight:600;
+
+color:#666;
+
+margin:0;
+
+}
+/*==================================================
+SECTION TITLES
+==================================================*/
+
+.section-subtitle{
+
+display:inline-block;
+
+padding:10px 24px;
+
+background:#eef4ff;
+
+color:#0B1F52;
+
+font-weight:700;
+
+border-radius:40px;
+
+letter-spacing:1px;
+
+margin-bottom:18px;
+
+text-transform:uppercase;
+
+font-size:13px;
+
+}
+
+.section-title{
+
+font-size:46px;
+
+font-weight:800;
+
+color:#0B1F52;
+
+margin-bottom:20px;
+
+}
+
+.section-description{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:32px;
+
+color:#666;
+
+}
+
+
+/*==================================================
+WHY GTU
+==================================================*/
+
+.why-gtu{
+
+background:#f7f9fc;
+
+}
+
+.feature-box{
+
+background:#ffffff;
+
+padding:45px 35px;
+
+text-align:center;
+
+border-radius:22px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+border-top:5px solid transparent;
+
+}
+
+.feature-box:hover{
+
+transform:translateY(-12px);
+
+border-color:#FDB913;
+
+box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+.feature-box i{
+
+font-size:55px;
+
+width:110px;
+
+height:110px;
+
+line-height:110px;
+
+background:#0B1F52;
+
+color:#fff;
+
+border-radius:50%;
+
+margin-bottom:30px;
+
+transition:.3s;
+
+}
+
+.feature-box:hover i{
+
+background:#FDB913;
+
+color:#000;
+
+transform:rotate(360deg);
+
+}
+
+.feature-box h4{
+
+font-size:25px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+color:#0B1F52;
+
+}
+
+.feature-box p{
+
+font-size:16px;
+
+line-height:28px;
+
+color:#666;
+
+margin:0;
+
+}
+/*==================================================
+FACULTIES
+==================================================*/
+
+.faculties{
+
+background:#ffffff;
+
+}
+
+.faculty-card{
+
+background:#fff;
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+height:100%;
+
+}
+
+.faculty-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.16);
+
+}
+
+.faculty-card img{
+
+height:240px;
+
+width:100%;
+
+object-fit:cover;
+
+transition:.4s;
+
+}
+
+.faculty-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.faculty-card h4{
+
+padding:25px 25px 10px;
+
+font-size:26px;
+
+font-weight:700;
+
+color:#0B1F52;
+
+}
+
+.faculty-card p{
+
+padding:0 25px;
+
+color:#666;
+
+line-height:30px;
+
+min-height:120px;
+
+}
+
+.faculty-card .btn{
+
+margin:0 25px 30px;
+
+border-radius:50px;
+
+padding:12px 28px;
+
+font-weight:700;
+
+}
+/*==================================================
+PROGRAMS
+==================================================*/
+
+.programs{
+
+background:#f8f9fc;
+
+}
+
+.program-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:22px;
+
+margin-bottom:30px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+border-left:6px solid #0B1F52;
+
+}
+
+.program-card:hover{
+
+transform:translateY(-10px);
+
+border-left:6px solid #FDB913;
+
+box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+.program-card h4{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#0B1F52;
+
+margin-bottom:15px;
+
+}
+
+.program-card p{
+
+font-size:17px;
+
+color:#666;
+
+margin-bottom:25px;
+
+}
+
+.program-card .btn{
+
+border-radius:50px;
+
+padding:12px 30px;
+
+font-weight:700;
+
+}
+/*==================================================
+ ADMISSION BANNER
+==================================================*/
+
+.admission-banner{
+
+background:linear-gradient(135deg,#0B1F52,#163A8C);
+
+padding:90px 0;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.admission-banner::before{
+
+content:"";
+
+position:absolute;
+
+top:-120px;
+
+right:-120px;
+
+width:320px;
+
+height:320px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+}
+
+.admission-banner::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-100px;
+
+left:-100px;
+
+width:250px;
+
+height:250px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:50%;
+
+}
+
+.admission-banner h2{
+
+font-size:48px;
+
+font-weight:800;
+
+}
+
+.admission-banner p{
+
+font-size:18px;
+
+line-height:32px;
+
+max-width:700px;
+
+}
+
+
+
+/*==================================================
+ CAMPUS LIFE
+==================================================*/
+
+.campus-life{
+
+background:#ffffff;
+
+}
+
+.campus-card{
+
+background:#fff;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.campus-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.16);
+
+}
+
+.campus-card img{
+
+height:260px;
+
+width:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.campus-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.campus-content{
+
+padding:30px;
+
+}
+
+.campus-content h4{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#0B1F52;
+
+margin-bottom:15px;
+
+}
+
+.campus-content p{
+
+color:#666;
+
+line-height:30px;
+
+}
+
+
+
+/*==================================================
+ NEWS
+==================================================*/
+
+.news{
+
+background:#f8f9fc;
+
+}
+
+.news-card{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.news-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.news-card img{
+
+height:240px;
+
+width:100%;
+
+object-fit:cover;
+
+}
+
+.news-card h4{
+
+font-size:24px;
+
+font-weight:700;
+
+color:#0B1F52;
+
+margin-bottom:15px;
+
+}
+
+.news-card a{
+
+font-weight:700;
+
+color:#FDB913;
+
+}
+
+
+
+/*==================================================
+ TESTIMONIALS
+==================================================*/
+
+.testimonials{
+
+background:#ffffff;
+
+}
+
+.testimonial-card{
+
+background:#fff;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.testimonial-card img{
+
+width:90px;
+
+height:90px;
+
+object-fit:cover;
+
+border:5px solid #FDB913;
+
+margin:auto;
+
+}
+
+.testimonial-card h4{
+
+margin-top:20px;
+
+font-size:24px;
+
+font-weight:700;
+
+color:#0B1F52;
+
+}
+
+.testimonial-card p{
+
+font-style:italic;
+
+line-height:30px;
+
+color:#666;
+
+}
+
+
+
+/*==================================================
+ CONTACT
+==================================================*/
+
+.contact-section{
+
+background:#f8f9fc;
+
+}
+
+.contact-box{
+
+background:#fff;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:20px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+height:100%;
+
+transition:.35s;
+
+}
+
+.contact-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.contact-box i{
+
+font-size:45px;
+
+color:#FDB913;
+
+margin-bottom:20px;
+
+}
+
+.contact-box h4{
+
+font-weight:700;
+
+color:#0B1F52;
+
+margin-bottom:15px;
+
+}
+
+
+
+/*==================================================
+ NEWSLETTER
+==================================================*/
+
+.newsletter{
+
+background:#0B1F52;
+
+padding:80px 0;
+
+color:#fff;
+
+}
+
+.newsletter h2{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+}
+
+.newsletter .form-control{
+
+height:60px;
+
+border-radius:50px 0 0 50px;
+
+padding-left:25px;
+
+border:none;
+
+}
+
+.newsletter .btn{
+
+border-radius:0 50px 50px 0;
+
+padding:0 35px;
+
+font-weight:700;
+
+}
+
+
+
+/*==================================================
+ FOOTER
+==================================================*/
+
+.footer{
+
+background:#071533;
+
+color:#d7d7d7;
+
+padding:90px 0 30px;
+
+}
+
+.footer h3,
+
+.footer h5{
+
+color:#fff;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.footer ul{
+
+padding:0;
+
+}
+
+.footer ul li{
+
+list-style:none;
+
+margin-bottom:12px;
+
+}
+
+.footer a{
+
+color:#d7d7d7;
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:#FDB913;
+
+padding-left:6px;
+
+}
+
+.footer hr{
+
+border-color:rgba(255,255,255,.15);
+
+margin:45px 0 25px;
+
+}
+
+.footer .fab{
+
+transition:.3s;
+
+}
+
+.footer .fab:hover{
+
+color:#FDB913;
+
+transform:translateY(-4px);
+
+}
+/*==================================================
+ RESPONSIVE DESIGN
+==================================================*/
+
+/* Large Devices (1200px and below) */
+@media (max-width:1200px){
+
+.logo-title{
+    font-size:22px;
+}
+
+.hero-title{
+    font-size:48px;
+}
+
+.section-title{
+    font-size:40px;
+}
+
+.nav-link{
+    padding:10px 12px !important;
+}
+
+}
+
+/* Laptop & Tablet */
+@media (max-width:992px){
+
+.top-bar{
+    display:none;
+}
+
+.navbar{
+    padding:15px 0;
+}
+
+.logo{
+    height:55px;
+}
+
+.logo-title{
+    font-size:20px;
+}
+
+.logo-subtitle{
+    font-size:12px;
+}
+
+.hero-section{
+    min-height:auto;
+    padding:100px 0;
+    text-align:center;
+}
+
+.hero-title{
+    font-size:42px;
+}
+
+.hero-text{
+    font-size:17px;
+}
+
+.hero-image{
+    margin-top:50px;
+}
+
+.statistics{
+    margin-top:0;
+}
+
+.stat-card{
+    margin-bottom:25px;
+}
+
+.feature-box{
+    margin-bottom:30px;
+}
+
+.faculty-card{
+    margin-bottom:30px;
+}
+
+.program-card{
+    margin-bottom:30px;
+}
+
+.campus-card{
+    margin-bottom:30px;
+}
+
+.news-card{
+    margin-bottom:30px;
+}
+
+.testimonial-card{
+    margin-bottom:30px;
+}
+
+.contact-box{
+    margin-bottom:30px;
+}
+
+.newsletter{
+    text-align:center;
+}
+
+.newsletter .input-group{
+    margin-top:25px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.footer .col-lg-2,
+.footer .col-lg-3,
+.footer .col-lg-4{
+    margin-bottom:40px;
+}
+
+}
+
+/* Mobile Devices */
+@media (max-width:768px){
+
+.hero-section{
+    padding:80px 0;
+}
+
+.hero-title{
+    font-size:34px;
+    line-height:1.3;
+}
+
+.hero-text{
+    font-size:16px;
+    line-height:28px;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+.section-description{
+    font-size:16px;
+    line-height:28px;
+}
+
+.hero-buttons .btn{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.stat-card h2{
+    font-size:36px;
+}
+
+.feature-box{
+    padding:35px 25px;
+}
+
+.feature-box i{
+    width:85px;
+    height:85px;
+    line-height:85px;
+    font-size:40px;
+}
+
+.faculty-card h4,
+.program-card h4,
+.campus-content h4,
+.news-card h4{
+    font-size:22px;
+}
+
+.admission-banner h2{
+    font-size:34px;
+}
+
+.newsletter h2{
+    font-size:30px;
+}
+
+.newsletter .form-control{
+    border-radius:50px;
+    margin-bottom:15px;
+}
+
+.newsletter .btn{
+    border-radius:50px;
+    width:100%;
+    height:55px;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:576px){
+
+.container{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.logo{
+    height:48px;
+}
+
+.logo-title{
+    font-size:18px;
+}
+
+.logo-subtitle{
+    display:none;
+}
+
+.hero-title{
+    font-size:28px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.hero-tag{
+    font-size:12px;
+    padding:8px 18px;
+}
+
+.btn{
+    font-size:15px;
+}
+
+.footer{
+    padding:60px 0 25px;
+}
+
+.footer h3{
+    font-size:24px;
+}
+
+.footer h5{
+    font-size:18px;
+}
+
+}
+/* ===============================
+   Navbar Logo Fix
+================================= */
+
+.navbar-brand{
+
+display:flex;
+align-items:center;
+flex-shrink:0;
+margin-right:40px;
+
+}
+
+.logo{
+
+width:60px;
+height:60px;
+object-fit:contain;
+
+}
+
+.logo-title{
+
+font-size:30px;
+font-weight:700;
+line-height:1.1;
+margin:0;
+
+}
+
+.logo-subtitle{
+
+font-size:13px;
+margin:0;
+
+}
+
+/* =========================================================
+   FINAL HERO LOGIN PORTAL FIX
+========================================================= */
+
+.hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 18px !important;
+}
+
+
+/* Apply + Login buttons */
+
+.hero-buttons > a,
+.hero-buttons > .login-portal-wrapper {
+    flex: 0 0 auto !important;
+    align-self: flex-start !important;
+}
+
+
+/* Apply Now */
+
+.hero-buttons > a.btn-warning {
+    width: auto !important;
+    height: 68px !important;
+    min-height: 68px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 30px !important;
+
+    border-radius: 40px !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* Login wrapper */
+
+.login-portal-wrapper {
+    position: relative !important;
+
+    display: inline-block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    flex: 0 0 auto !important;
+
+    align-self: flex-start !important;
+}
+
+
+/* Login button */
+
+.login-portal-btn {
+    width: auto !important;
+    height: 68px !important;
+    min-height: 68px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 30px !important;
+
+    border-radius: 40px !important;
+
+    white-space: nowrap !important;
+
+    border: none !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1677ff,
+            #6246ea
+        ) !important;
+
+    color: #fff !important;
+
+    box-shadow:
+        0 12px 30px rgba(22,119,255,.28);
+
+    cursor: pointer;
+}
+
+
+/* Login button hover */
+
+.login-portal-btn:hover {
+    color: #fff !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 40px rgba(98,70,234,.35);
+}
+
+
+/* Chevron */
+
+.login-arrow {
+    transition: transform .25s ease;
+}
+
+.login-portal-btn.active .login-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   LOGIN DROPDOWN
+========================================================= */
+
+.login-menu {
+    position: absolute !important;
+
+    top: calc(100% + 12px) !important;
+    left: 0 !important;
+    right: auto !important;
+
+    width: 350px !important;
+    max-width: calc(100vw - 30px) !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding: 12px !important;
+
+    display: block !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #071a3d,
+            #151344
+        ) !important;
+
+    border: 1px solid rgba(255,255,255,.15) !important;
+
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.50) !important;
+
+    z-index: 99999 !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    transform: translateY(-8px) !important;
+
+    transition:
+        opacity .22s ease,
+        visibility .22s ease,
+        transform .22s ease !important;
+}
+
+
+/* OPEN */
+
+.login-menu.show {
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    transform: translateY(0) !important;
+}
+
+
+/* =========================================================
+   LOGIN MENU HEADER
+========================================================= */
+
+.login-menu-header {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 12px !important;
+
+    padding: 12px !important;
+
+    margin: 0 0 8px 0 !important;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.10) !important;
+}
+
+
+.login-menu-icon {
+    width: 45px !important;
+    height: 45px !important;
+
+    flex: 0 0 45px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 13px !important;
+
+    color: #fff !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1677ff,
+            #8b5cf6
+        ) !important;
+}
+
+
+.login-menu-header h3 {
+    margin: 0 0 3px 0 !important;
+
+    color: #fff !important;
+
+    font-size: 18px !important;
+}
+
+
+.login-menu-header p {
+    margin: 0 !important;
+
+    color: rgba(255,255,255,.55) !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   LOGIN OPTIONS
+========================================================= */
+
+.login-option {
+    width: 100% !important;
+
+    min-height: 65px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 12px !important;
+
+    padding: 10px !important;
+
+    margin: 5px 0 !important;
+
+    border-radius: 14px !important;
+
+    text-decoration: none !important;
+
+    color: #fff !important;
+
+    background:
+        rgba(255,255,255,.045) !important;
+
+    border: 1px solid transparent !important;
+
+    box-sizing: border-box !important;
+
+    transition: .25s ease !important;
+}
+
+
+.login-option:hover {
+    color: #fff !important;
+
+    background:
+        rgba(255,255,255,.09) !important;
+
+    border-color:
+        rgba(255,255,255,.12) !important;
+
+    transform: translateX(3px);
+}
+
+
+/* Option icons */
+
+.option-icon {
+    width: 42px !important;
+    height: 42px !important;
+
+    flex: 0 0 42px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 12px !important;
+
+    color: #fff !important;
+}
+
+
+/* Student */
+
+.student-option .option-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #1677ff,
+            #3b82f6
+        ) !important;
+}
+
+
+/* Teacher */
+
+.teacher-option .option-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #12a86b,
+            #16c784
+        ) !important;
+}
+
+
+/* Admin */
+
+.admin-option .option-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #ef3348,
+            #b91c3c
+        ) !important;
+}
+
+
+/* Text */
+
+.option-text {
+    flex: 1 !important;
+
+    min-width: 0 !important;
+}
+
+
+.option-text strong {
+    display: block !important;
+
+    margin: 0 0 3px 0 !important;
+
+    color: #fff !important;
+
+    font-size: 14px !important;
+}
+
+
+.option-text small {
+    display: block !important;
+
+    color: rgba(255,255,255,.55) !important;
+
+    font-size: 11px !important;
+}
+
+
+.option-arrow {
+    flex: 0 0 auto !important;
+
+    color: rgba(255,255,255,.45) !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero-buttons {
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+
+        width: 100% !important;
+    }
+
+
+    .hero-buttons > a.btn-warning,
+    .login-portal-wrapper {
+        width: 100% !important;
+    }
+
+
+    .hero-buttons > a.btn-warning {
+        height: 62px !important;
+    }
+
+
+    .login-portal-btn {
+        width: 100% !important;
+
+        height: 62px !important;
+    }
+
+
+    .login-menu {
+        width: 100% !important;
+
+        max-width: 100% !important;
+    }
+
+}
